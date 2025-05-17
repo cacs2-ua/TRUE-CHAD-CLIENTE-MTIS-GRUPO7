@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp1.utils;
 
 namespace Cliente_Mtis_Facturacion_Grupo7
 {
@@ -19,7 +20,7 @@ namespace Cliente_Mtis_Facturacion_Grupo7
 
         private void consultarButton_Click(object sender, EventArgs e)
         {
-
+            string WSKey = Utils.obtenerRestKey();
         }
     }
 }
