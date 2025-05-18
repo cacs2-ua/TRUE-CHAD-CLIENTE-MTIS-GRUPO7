@@ -47,35 +47,35 @@ namespace Cliente_Mtis_Facturacion_Grupo7
 
             string WSKey = Utils.obtenerRestKey();
 
-            var nombreEmpresa = nombreEmpresaTextBox.Text;
-            var emailEmpresa = emailEmpresaTextBox.Text;
-            var identificadorFiscalEmpresa = identificadorFiscalEmpresaTextBox.Text;
-            var identificadorEmpleador = identificadorEmpleadorTextBox.Text;
-            var ibanEmpresa = ibanEmpresaTextBox.Text;
-            var paisEmpresa = paisEmpresaTextBox.Text;
-            var provinciaEmpresa = provinciaEmpresaTextBox.Text;
-            var localidadEmpresa = localidadEmpresaTextBox.Text;
-            var direccionFacturacion = direccionCompletaFacturacionTextBox.Text;
-            var codigoPostal = codigoPostalEmpresaTextbox.Text;
-            var numeroFactura = numeroFacturaTextBox.Text;
+            var nombreEmpresa = nombreEmpresaTextBox.Text.Trim();
+            var emailEmpresa = emailEmpresaTextBox.Text.Trim();
+            var identificadorFiscalEmpresa = identificadorFiscalEmpresaTextBox.Text.Trim();
+            var identificadorEmpleador = identificadorEmpleadorTextBox.Text.Trim();
+            var ibanEmpresa = ibanEmpresaTextBox.Text.Trim();
+            var paisEmpresa = paisEmpresaTextBox.Text.Trim();
+            var provinciaEmpresa = provinciaEmpresaTextBox.Text.Trim();
+            var localidadEmpresa = localidadEmpresaTextBox.Text.Trim();
+            var direccionFacturacion = direccionCompletaFacturacionTextBox.Text.Trim();
+            var codigoPostal = codigoPostalEmpresaTextbox.Text.Trim();
+            var numeroFactura = numeroFacturaTextBox.Text.Trim();
 
-            if (!decimal.TryParse(baseImponibleTextBox.Text, out var baseImponible))
+            if (!decimal.TryParse(baseImponibleTextBox.Text.Trim(), out var baseImponible))
             {
                 MessageBox.Show("Base imponible inválida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (!double.TryParse(ivaTextBox.Text, out var iva))
+            if (!double.TryParse(ivaTextBox.Text.Trim(), out var iva))
             {
                 MessageBox.Show("IVA inválido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            var moneda = monedaTextBox.Text;
-            if (!DateTime.TryParse(fechaInicioFacturacionTextBox.Text, out var fechaDesde))
+            var moneda = monedaTextBox.Text.Trim();
+            if (!DateTime.TryParse(fechaInicioFacturacionTextBox.Text.Trim(), out var fechaDesde))
             {
                 MessageBox.Show("Fecha inicio inválida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (!DateTime.TryParse(fechaFinalFacturacionTextBox.Text, out var fechaHasta))
+            if (!DateTime.TryParse(fechaFinalFacturacionTextBox.Text.Trim(), out var fechaHasta))
             {
                 MessageBox.Show("Fecha fin inválida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
