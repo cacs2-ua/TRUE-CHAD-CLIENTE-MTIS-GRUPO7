@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,6 +26,19 @@ namespace WinFormsApp1.utils
             string WSKey = System.IO.File.ReadAllText(wsKeyFilePath).Trim();
 
             return WSKey;
+        }
+
+        public static bool IsValidEmail(string email)
+        {
+            try
+            {
+                var mailAddress = new MailAddress(email);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public static String obtenerRestKey()
