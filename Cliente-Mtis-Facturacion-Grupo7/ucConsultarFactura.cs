@@ -59,7 +59,10 @@ namespace Cliente_Mtis_Facturacion_Grupo7
 
                     foreach (var kvp in facturaData)
                     {
-                        facturaDataGridView.Columns.Add(kvp.Key, kvp.Key);
+                        if (kvp.Key != "uuid") // 👈 Oculta el campo uuid
+                        {
+                            facturaDataGridView.Columns.Add(kvp.Key, kvp.Key);
+                        }
                     }
 
                     int rowIndex = facturaDataGridView.Rows.Add();
@@ -67,7 +70,8 @@ namespace Cliente_Mtis_Facturacion_Grupo7
 
                     foreach (var kvp in facturaData)
                     {
-                        // Formatear fechas si es necesario
+                        if (kvp.Key == "uuid") continue; // 👈 No mostrar el campo uuid
+
                         if (kvp.Value is string str && DateTime.TryParse(str, out DateTime dt))
                         {
                             facturaDataGridView.Rows[rowIndex].Cells[columnIndex].Value = dt.ToString("dd/MM/yyyy HH:mm");
