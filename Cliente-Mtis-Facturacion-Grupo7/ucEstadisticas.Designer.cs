@@ -31,14 +31,12 @@
             label1 = new Label();
             label2 = new Label();
             totalReportesEmitidosLabel = new Label();
-            label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
             totalFacturasEmitidasLabel = new Label();
-            sumaTotalImportesLabel = new Label();
             totalFacturasValidasLabel = new Label();
             totalFacturasSubsanadasLabel = new Label();
             totalFacturasAnuladasLabel = new Label();
@@ -78,21 +76,11 @@
             totalReportesEmitidosLabel.TabIndex = 4;
             totalReportesEmitidosLabel.Text = "procesando...";
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label4.Location = new Point(506, 246);
-            label4.Name = "label4";
-            label4.Size = new Size(509, 30);
-            label4.TabIndex = 5;
-            label4.Text = "Suma total de todos los importes (IVA incluido):";
-            // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label5.Location = new Point(396, 311);
+            label5.Location = new Point(396, 246);
             label5.Name = "label5";
             label5.Size = new Size(619, 30);
             label5.TabIndex = 6;
@@ -102,7 +90,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label6.Location = new Point(556, 376);
+            label6.Location = new Point(556, 311);
             label6.Name = "label6";
             label6.Size = new Size(459, 30);
             label6.TabIndex = 7;
@@ -112,7 +100,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label7.Location = new Point(588, 441);
+            label7.Location = new Point(588, 376);
             label7.Name = "label7";
             label7.Size = new Size(427, 30);
             label7.TabIndex = 8;
@@ -122,7 +110,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label8.Location = new Point(694, 506);
+            label8.Location = new Point(694, 441);
             label8.Name = "label8";
             label8.Size = new Size(321, 30);
             label8.TabIndex = 9;
@@ -132,7 +120,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label9.Location = new Point(695, 571);
+            label9.Location = new Point(695, 506);
             label9.Name = "label9";
             label9.Size = new Size(320, 30);
             label9.TabIndex = 10;
@@ -148,21 +136,11 @@
             totalFacturasEmitidasLabel.TabIndex = 11;
             totalFacturasEmitidasLabel.Text = "procesando...";
             // 
-            // sumaTotalImportesLabel
-            // 
-            sumaTotalImportesLabel.AutoSize = true;
-            sumaTotalImportesLabel.Font = new Font("Segoe UI", 13F);
-            sumaTotalImportesLabel.Location = new Point(1118, 246);
-            sumaTotalImportesLabel.Name = "sumaTotalImportesLabel";
-            sumaTotalImportesLabel.Size = new Size(142, 30);
-            sumaTotalImportesLabel.TabIndex = 12;
-            sumaTotalImportesLabel.Text = "procesando...";
-            // 
             // totalFacturasValidasLabel
             // 
             totalFacturasValidasLabel.AutoSize = true;
             totalFacturasValidasLabel.Font = new Font("Segoe UI", 13F);
-            totalFacturasValidasLabel.Location = new Point(1118, 376);
+            totalFacturasValidasLabel.Location = new Point(1118, 311);
             totalFacturasValidasLabel.Name = "totalFacturasValidasLabel";
             totalFacturasValidasLabel.Size = new Size(142, 30);
             totalFacturasValidasLabel.TabIndex = 13;
@@ -172,7 +150,7 @@
             // 
             totalFacturasSubsanadasLabel.AutoSize = true;
             totalFacturasSubsanadasLabel.Font = new Font("Segoe UI", 13F);
-            totalFacturasSubsanadasLabel.Location = new Point(1118, 441);
+            totalFacturasSubsanadasLabel.Location = new Point(1118, 376);
             totalFacturasSubsanadasLabel.Name = "totalFacturasSubsanadasLabel";
             totalFacturasSubsanadasLabel.Size = new Size(142, 30);
             totalFacturasSubsanadasLabel.TabIndex = 14;
@@ -182,7 +160,7 @@
             // 
             totalFacturasAnuladasLabel.AutoSize = true;
             totalFacturasAnuladasLabel.Font = new Font("Segoe UI", 13F);
-            totalFacturasAnuladasLabel.Location = new Point(1118, 506);
+            totalFacturasAnuladasLabel.Location = new Point(1118, 441);
             totalFacturasAnuladasLabel.Name = "totalFacturasAnuladasLabel";
             totalFacturasAnuladasLabel.Size = new Size(142, 30);
             totalFacturasAnuladasLabel.TabIndex = 15;
@@ -192,7 +170,7 @@
             // 
             totalFacturasInvalidasLabel.AutoSize = true;
             totalFacturasInvalidasLabel.Font = new Font("Segoe UI", 13F);
-            totalFacturasInvalidasLabel.Location = new Point(1118, 571);
+            totalFacturasInvalidasLabel.Location = new Point(1118, 506);
             totalFacturasInvalidasLabel.Name = "totalFacturasInvalidasLabel";
             totalFacturasInvalidasLabel.Size = new Size(142, 30);
             totalFacturasInvalidasLabel.TabIndex = 16;
@@ -212,7 +190,7 @@
             // 
             totalTodasFacturasValidasLabel.AutoSize = true;
             totalTodasFacturasValidasLabel.Font = new Font("Segoe UI", 13F);
-            totalTodasFacturasValidasLabel.Location = new Point(1118, 311);
+            totalTodasFacturasValidasLabel.Location = new Point(1118, 246);
             totalTodasFacturasValidasLabel.Name = "totalTodasFacturasValidasLabel";
             totalTodasFacturasValidasLabel.Size = new Size(142, 30);
             totalTodasFacturasValidasLabel.TabIndex = 18;
@@ -228,14 +206,12 @@
             Controls.Add(totalFacturasAnuladasLabel);
             Controls.Add(totalFacturasSubsanadasLabel);
             Controls.Add(totalFacturasValidasLabel);
-            Controls.Add(sumaTotalImportesLabel);
             Controls.Add(totalFacturasEmitidasLabel);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(label4);
             Controls.Add(totalReportesEmitidosLabel);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -251,14 +227,12 @@
         private Label label1;
         private Label label2;
         private Label totalReportesEmitidosLabel;
-        private Label label4;
         private Label label5;
         private Label label6;
         private Label label7;
         private Label label8;
         private Label label9;
         private Label totalFacturasEmitidasLabel;
-        private Label sumaTotalImportesLabel;
         private Label totalFacturasValidasLabel;
         private Label totalFacturasSubsanadasLabel;
         private Label totalFacturasAnuladasLabel;

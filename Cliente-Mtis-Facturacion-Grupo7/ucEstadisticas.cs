@@ -38,7 +38,6 @@ namespace Cliente_Mtis_Facturacion_Grupo7
 
                     totalReportesEmitidosLabel.Text = response.datosEntrada.numeroTotalReportesCreados.ToString();
                     totalFacturasEmitidasLabel.Text = response.datosEntrada.numeroTotalFacturasEmitidas.ToString();
-                    sumaTotalImportesLabel.Text = response.datosEntrada.sumaTotalImportes.ToString();
                     totalTodasFacturasValidasLabel.Text = (response.datosEntrada.numeroTotalFacturasValidas + response.datosEntrada.numeroTotalFacturasSubsanadas).ToString();
                     totalFacturasValidasLabel.Text = response.datosEntrada.numeroTotalFacturasValidas.ToString();
                     totalFacturasSubsanadasLabel.Text = response.datosEntrada.numeroTotalFacturasSubsanadas.ToString();
