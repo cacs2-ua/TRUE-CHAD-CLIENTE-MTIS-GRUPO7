@@ -83,6 +83,8 @@ namespace Cliente_Mtis_Facturacion_Grupo7
 
                         columnIndex++;
                     }
+
+                    facturaDataGridView.Visible = true;
                 }
                 else
                 {
@@ -103,6 +105,11 @@ namespace Cliente_Mtis_Facturacion_Grupo7
         private void emailEmpresaTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ucConsultarFactura_Load(object sender, EventArgs e)
+        {
+            facturaDataGridView.Visible = false;
         }
     }
 }
