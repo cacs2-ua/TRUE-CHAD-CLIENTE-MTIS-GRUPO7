@@ -47,22 +47,22 @@ namespace Cliente_Mtis_Facturacion_Grupo7
             // 2️⃣  Construir el JSON de la factura con los datos del formulario
             var factura = new
             {
-                nombreEmpresa = nombreEmpresaTextBox.Text,
-                emailEmpresa = emailEmpresaTextBox.Text,
-                identificadorFiscalEmpresa = identificadorFiscalEmpresaTextBox.Text,
-                identificadorEmpleador = identificadorEmpleadorTextBox.Text,
-                ibanEmpresa = ibanEmpresaTextBox.Text,
-                paisEmpresa = paisEmpresaTextBox.Text,
-                provinciaEmpresa = provinciaEmpresaTextBox.Text,
-                localidadEmpresa = localidadEmpresaTextBox.Text,
-                direccionCompletaFacturacion = direccionCompletaFacturacionTextBox.Text,
-                codigoPostal = codigoPostalEmpresaTextbox.Text,
-                numeroFactura = numeroFacturaTextBox.Text,
+                nombreEmpresa = nombreEmpresaTextBox.Text.Trim(),
+                emailEmpresa = emailEmpresaTextBox.Text.Trim(),
+                identificadorFiscalEmpresa = identificadorFiscalEmpresaTextBox.Text.Trim(),
+                identificadorEmpleador = identificadorEmpleadorTextBox.Text.Trim(),
+                ibanEmpresa = ibanEmpresaTextBox.Text.Trim(),
+                paisEmpresa = paisEmpresaTextBox.Text.Trim(),
+                provinciaEmpresa = provinciaEmpresaTextBox.Text.Trim(),
+                localidadEmpresa = localidadEmpresaTextBox.Text.Trim(),
+                direccionCompletaFacturacion = direccionCompletaFacturacionTextBox.Text.Trim(),
+                codigoPostal = codigoPostalEmpresaTextbox.Text.Trim(),
+                numeroFactura = numeroFacturaTextBox.Text.Trim(),
                 baseImponible = double.Parse(baseImponibleTextBox.Text),
                 iva = double.Parse(ivaTextBox.Text),
                 moneda = monedaTextBox.Text,
-                fechaDesdeFacturacion = fechaInicioFacturacionTextBox.Text,
-                fechaHastaFacturacion = fechaFinalFacturacionTextBox.Text
+                fechaDesdeFacturacion = fechaInicioFacturacionTextBox.Text.Trim(),
+                fechaHastaFacturacion = fechaFinalFacturacionTextBox.Text.Trim()
             };
 
             string jsonFactura = JsonSerializer.Serialize(factura);
